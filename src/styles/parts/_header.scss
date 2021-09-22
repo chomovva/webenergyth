@@ -1,0 +1,42 @@
+.header {
+
+	.container {
+		display: flex;
+		align-items: center;
+	}
+
+	.custom-logo {
+		display: block;
+		max-width: 6rem;
+		max-height: 6rem;
+		width: auto;
+		height: auto;
+	}
+
+	.list {
+		display: none;
+		list-style-type: none;
+		margin-left: auto;
+		@include min-width ( $screen-lg ) {
+			display: flex;
+		}
+	}
+
+	.list a {
+		display: block;
+		padding: .5rem 1rem;
+		font-weight: 500;
+	}
+
+	.list a.current-menu-item {
+		color: $brand-primary;
+	}
+
+	.burger {
+		margin-left: auto;
+		@include min-width ( $screen-lg ) {
+			display: none;
+		}
+	}
+
+}

@@ -1,0 +1,14 @@
+//-
+	Набор миксинов
+
+//- прогрессбар
+mixin progress ( percent )
+	.progress
+		.progress-bar( role='progressbar' style='width: ' + percent aria-valuenow=percent aria-valuemin='0' aria-valuemax='100' )
+
+
+//- виджет сайдбара
+mixin widget ( args )
+	.widget
+		h3.widget__title.title #{args.title}
+		block

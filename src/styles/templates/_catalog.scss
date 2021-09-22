@@ -1,0 +1,20 @@
+//- Каталог товаров
+.catalog {
+
+	.product {
+		@extend .col-xs-8;
+		@extend .col-sm-6;
+		@extend .col-md-4;
+		@extend .col-lg-4;
+		margin-top: $flexboxgrid-outer-margin / 2;
+		margin-bottom: $flexboxgrid-outer-margin / 2;
+	}
+
+	.product .title {
+		@extend %small;
+		@include min-width( $screen-sm ) {
+			font-size: initial;
+		}
+	}
+
+}

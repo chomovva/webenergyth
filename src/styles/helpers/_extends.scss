@@ -1,0 +1,57 @@
+%list-unstyled { @include list-unstyled; }
+
+%list-inline { @include list-inline; }
+
+%xy-center { @include xy-center; }
+
+%center-block { @include center-block; }
+
+%link-unstyled {
+	@include td ( inherit, inherit );
+	@include color ( inherit, inherit, inherit, inherit );
+}
+
+%clearfix { @include clearfix; }
+
+%text-overflow { @include text-overflow; }
+
+%dl-horizontal { @include dl-horizontal; }
+
+%hide {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+
+%small {
+	font-size: 80%;
+}
+
+
+%lead {
+	font-size: 125%;
+	font-weight: 300;
+}
+
+
+%bgi {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+%bgi-contain {
+	background-position: center center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+%bgi-cover {
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}

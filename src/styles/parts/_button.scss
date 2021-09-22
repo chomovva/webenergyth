@@ -1,0 +1,19 @@
+
+// кнопки по аналогии с bootstrap
+.btn {
+
+	@extend %button;
+
+	&-default { @extend %button-default; }
+
+	&-primary { @extend %button-primary; }
+
+	&-success { @extend %button-success; }
+
+	&-sm { @extend %button-small; }
+
+	&-lg { @extend %button-large; }
+
+	&-block { @extend %button-block; }
+
+}

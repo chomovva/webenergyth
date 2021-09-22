@@ -1,0 +1,26 @@
+extend layout/_index
+
+
+block variables
+	- page.type = 'error404';
+	- page.title = 'Страница не найдена';
+
+
+block main
+	.container
+		.row.center-xs.middle-xs.pt-3.pb-3
+			
+			.col-xs-8.col-sm-6.col-md-4.col-lg-4
+				img.logo.lazy.center-block( src="#", data-src=src.img+'error404.png', alt=page.title )
+				
+			.col-xs-12.col-sm-6.col-md-8.col-lg-8
+					h1.title #{page.title}
+					ul.list-inline.mb-3.mt-3
+						li: a.text-primary( href="#" ) Категория 1
+						li: a.text-primary( href="#" ) Категория 2
+						li: a.text-primary( href="#" ) Категория 3
+						li: a.text-primary( href="#" ) Категория 4
+						li: a.text-primary( href="#" ) Категория 5
+					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae non magnam expedita possimus facilis, placeat, perferendis quam incidunt sapiente id quibusdam, voluptatem est aliquid repellat consectetur, dolorum quas tempora. Ducimus!
+					p.mt-3
+						a.btn.btn-primary( href="#" ) Вернуться на главную

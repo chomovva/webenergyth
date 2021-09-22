@@ -1,0 +1,66 @@
+//- Мобильное меню
+.mobilenav {
+
+	.custom-logo-link {
+		max-width: 5rem;
+	}
+
+	.close {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 2.5rem;
+		width: 2.5rem;
+		height: 2.5rem;
+		background-color: transparent;
+		border: none;
+		padding: 0;
+	}
+
+	.close::before,
+	.close::after {
+		content: '';
+		display: block;
+		height: .1rem;
+		background-color: #fff;
+		transform-origin: center center;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		margin-top: -.1rem;
+	}
+
+	.close::before {
+		transform: rotate( 45deg );
+	}
+
+	.close::after {
+		transform: rotate( -45deg );
+	}
+
+	.list {
+		text-align: center;
+		list-style-type: none;
+		padding-left: 0;
+	}
+
+	.list li + li {
+		margin-top: .5rem;
+	}
+
+	.list a {
+		@extend %lead;
+		display: block;
+		padding: .5rem 0;
+		color: #fff;
+		border-bottom: .1rem solid transparent;
+		transition: border-bottom-color .25s;
+	}
+
+	.list a:hover {
+		border-bottom-color: #fff;
+	}
+
+}

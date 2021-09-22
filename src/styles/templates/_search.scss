@@ -1,0 +1,38 @@
+// стили шаблона страницы поиска
+.search {
+
+	counter-reset: entries;
+
+	.entry {
+		counter-increment: entries;
+	}
+
+	.entry .counter {
+		@extend %xy-center;
+		width: 2rem;
+		height: 2rem;
+		background-color: $brand-primary;
+		@include min-width ( $screen-sm ) {
+			width: 3rem;
+			height: 3rem;
+		}
+	}
+
+	.entry .counter::after {
+		content: counter( entries );
+		color: #fff;
+	}
+
+	.entry .add-to-cart {
+		@extend %background-icon;
+		@extend %icon-add-to-cart-success;
+		display: inline-block;
+		width: 2.5rem;
+		height: 2.5rem;
+		margin-right: 2rem;
+		border: none;
+		vertical-align: middle;
+		background-color: transparent;
+	}
+
+}

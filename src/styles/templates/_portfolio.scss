@@ -1,0 +1,14 @@
+//- Шаблон страниці  категории
+//- Портфолио
+.category.portfolio {
+
+	.card {
+		@extend .col-xs-12;
+		@extend .col-sm-6;
+		@extend .col-md-6;
+		@extend .col-lg-6;
+		margin-top: $flexboxgrid-outer-margin / 2;
+		margin-bottom: $flexboxgrid-outer-margin / 2;
+	}
+
+}
