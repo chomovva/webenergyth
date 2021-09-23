@@ -39,6 +39,8 @@ img.alignright, a.alignright img { margin: 5px 0px 10px 10px; }
 
 .clearfix { @extend %clearfix; }
 
+.center-block { @extend %center-block; }
+
 .wp-caption {}
 .wp-caption-text {}
 .sticky {}
@@ -108,7 +110,7 @@ img.alignright, a.alignright img { margin: 5px 0px 10px 10px; }
 .border-top { border-top: .1rem solid $border-color; }
 
 .bg-gray {
-	background-color: lighten( $brand-default, 50% );
+	background-color: lighten( $brand-default, 45% );
 }
 
 @each $name, $color in $brand-colors {

@@ -3,14 +3,15 @@
 	Первый экран
 
 
-section.section.section--jumbotron.bg-gray.pt-3.pb-3#jumbotron
+section.section.section--jumbotron.bg-gray#jumbotron
 
 	.container
 
-		img.thumbnail( src=src.userfiles+'screen.png' alt='Превью первого єкрана' )
+		img.thumbnail#jumbotron-thumbnail( src=src.userfiles+'screen.png' alt='Превью первого єкрана' )
 
 		.content
 
-			h1 #{blog.name}
-			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			a.btn.btn-primary.mt-3 Написать мне
+			h1#jumbotron-title #{blog.name}
+			#jumbotron-description
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			a.btn.btn-primary.mt-3#jumbotron-permalink( href='#' ) Написать мне

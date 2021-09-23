@@ -1,0 +1,12 @@
+//- Главная странциа
+//- обо мне
+
+.section--about {
+
+	.description {
+		@extend .mt-3;
+		@extend .center-block;
+		max-width: 50rem;
+	}
+
+}

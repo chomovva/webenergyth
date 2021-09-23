@@ -1,0 +1,23 @@
+//-
+	Главная страница
+	Скилы
+
+mixin skills_entry
+	.entry
+		strong.title OpenCart
+		+progress( '75%' )
+
+section.section.section--skills.skills#skills
+	.container
+
+		.content
+			
+			h2#skills-title Мои навыки
+
+			#skills-wrap
+				+skills_entry
+				+skills_entry
+				+skills_entry
+
+
+		img.thumbnail( src=src.userfiles+'roman.jpg' alt='Рома' )

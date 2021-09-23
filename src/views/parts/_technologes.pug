@@ -1,0 +1,18 @@
+//-
+	Главная страница
+	Технологии
+
+mixin technologes_item
+	img.entry.d-inline-block.mt-1.mb-1.ml-2.mr-2( src=src.userfiles+'qtest.png' alt='qTest' )
+
+section.section.section--technologes.technologes.bg-primary#technologes
+	.container
+
+		h2#technologes-title.sr-only Технологии
+
+		#technologes-wrap.text-center
+			+technologes_item
+			+technologes_item
+			+technologes_item
+			+technologes_item
+			+technologes_item

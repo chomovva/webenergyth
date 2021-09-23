@@ -1,0 +1,13 @@
+//- Индикатор выполнения
+
+.progress {
+
+	background-color: lighten( $brand-default, 35% );
+	overflow: hidden;
+
+	.progress-bar {
+		background-color: $brand-primary;
+		height: .5rem;
+	}
+
+}

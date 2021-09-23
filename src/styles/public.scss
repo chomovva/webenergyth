@@ -21,9 +21,17 @@
 @import "parts/button";
 @import "parts/burger";
 @import "parts/header";
+@import "parts/progress";
+@import "parts/form";
 @import "parts/section";
-@import "parts/jumbotron";
+@import "parts/section.jumbotron";
+@import "parts/section.about";
+@import "parts/section.technologes";
+@import "parts/section.skills";
+// @import "parts/section.blog";
+@import "parts/section.feedback";
 @import "parts/footer";
+@import "parts/totopbutton";
 
 
 @import "templates/search";

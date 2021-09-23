@@ -14,13 +14,13 @@ form {
 	input[ type="number" ],
 	input[ type="email" ],
 	input[ type="password" ] {
+		@extend .mt-1;
+		@extend .mb-1;
 		border-radius: $border-radius;
 		background-color: #fff;
 		padding: .5rem 1rem;
 		display: block;
 		border: .1rem solid $text-color;
-		// margin-top: 1rem;
-		// margin-bottom: 1rem;
 		width: 100%;
 		box-sizing: border-box;
 		outline: none;

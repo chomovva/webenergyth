@@ -1,0 +1,19 @@
+//- Главная страница
+//- Обратная связь
+
+.section--feedback {
+
+	.container {
+		max-width: 35rem;
+	}
+
+	h2 {
+		text-align: center;
+	}
+
+	h2 + p {
+		@extend .mb-3;
+		text-align: center;
+	}
+
+}
