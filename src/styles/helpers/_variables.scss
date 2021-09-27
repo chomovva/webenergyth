@@ -20,7 +20,7 @@ $screen-nav-hide: $screen-lg;
 
 $brand-default:     #727272;
 $brand-primary:     #34547A;
-$brand-success:     #00D5E4;
+$brand-success:     #3db0b9;
 $brand-warning:     #FF0000;
 
 $brand-colors:
@@ -40,7 +40,7 @@ $line-height-base:	24 / 16;
 $font-family-base: 'Roboto', sans-serif;
 $font-family-titles: $font-family-base;
 
-$border-color: $brand-default;
+$border-color: lighten( $brand-default, 45% );
 
 $border-radius: 0;
 

@@ -1,0 +1,16 @@
+extend layout/_index
+
+
+block variables
+	- page.type = 'post singler page post-template-singular-column post-template-singular-column-php';
+	- page.title = 'Колонка';
+
+
+block main
+	.container
+		article.article
+			h1 #{page.title}
+			include parts/_breadcrumbs
+			include parts/_content
+			include parts/_pager
+		include parts/_column

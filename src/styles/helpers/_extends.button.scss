@@ -1,7 +1,6 @@
 %button {
 	display: inline-block;
 	text-decoration: none;
-	text-transform: uppercase;
 	cursor: pointer;
 	border: 2px solid;
 	padding: .75rem;
@@ -11,7 +10,6 @@
 	min-width: 8rem;
 	text-align: center;
 	vertical-align: middle;
-	letter-spacing: 2px;
 }
 
 @each $name, $color in $brand-colors {
@@ -22,6 +20,7 @@
 	%button-#{$name}:hover {
 		background-color: lighten( $color, 15% );
 		border-color: lighten( $color, 15% );
+		color: #fff;
 	}
 }
 
@@ -30,7 +29,6 @@
 	min-width: 4rem;
 	font-size: 85%;
 	border: 1px solid;
-	font-weight: bold;
 }
 
 %button-large {

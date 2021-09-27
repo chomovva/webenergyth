@@ -7,14 +7,31 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		flex-direction: column;
+		@include min-width( $screen-lg ) {
+			flex-direction: row;
+		}
 	}
 
 	.thumbnail {
-		margin: 3rem;
+		margin: 1rem auto;
+		max-width: 10rem;
+		height: auto;
+		@include min-width( $screen-md ) {
+			max-width: 20rem;
+		}
+		@include min-width( $screen-lg ) {
+			max-width: 25rem;
+			margin: 3rem;
+		}
 	}
 
 	.content {
-		margin: 3rem;
+		text-align: center;
+		@include min-width( $screen-lg ) {
+			margin: 3rem;
+			text-align: left;
+		}
 	}
 
 }

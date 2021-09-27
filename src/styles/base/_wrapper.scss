@@ -61,7 +61,6 @@
 	}
 
 	&__item--footer {
-		@extend %small;
 		padding: 1.5rem 0;
 		width: 100vw;
 		background-color: $brand-primary;

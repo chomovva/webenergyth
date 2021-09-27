@@ -1,0 +1,63 @@
+// список постов
+
+.list {
+	@extend .clearfix;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -$container-gutter-width;
+	margin-right: -$container-gutter-width;
+}
+
+.list {
+
+	.entry {
+		margin-top: $container-gutter-width;
+		margin-bottom: $container-gutter-width;
+		padding-left: $container-gutter-width;
+		padding-right: $container-gutter-width;
+		width: 100%;
+		overflow: hidden;
+		box-sizing: border-box;
+		@include min-width( $screen-lg ) {
+			width: 50%;
+		}
+	}
+
+	.entry .inner {
+		padding: $container-gutter-width;
+		background-color: #fff;
+		border: .1rem solid lighten( $brand-default, 45% );
+	}
+
+	.entry .thumbnail {
+		@extend .mb-2;
+		position: relative;
+		min-height: 1em * $line-height-base;
+	}
+
+	.entry .thumbnail time {
+		@extend .pl-1;
+		@extend .pr-1;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		text-shadow: .1rem .1rem .5rem rgba( 255, 255, 255, .5 );
+	}
+
+	.entry .wp-post-thumbnail {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.entry .categories {
+		@extend %list-inline;
+		@extend %small;
+		margin-bottom: $container-gutter-width;
+	}
+
+	.entry p {
+		margin-bottom: $container-gutter-width;
+	}
+
+}

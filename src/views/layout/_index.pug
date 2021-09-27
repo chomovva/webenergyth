@@ -14,11 +14,12 @@ html( lang="ru" )
 						block mobilenav
 							include ../parts/_mobilenav
 					header.wrapper__item.wrapper__item--header#header.header
-						block panel
-							.container
-								include ../parts/_header
+						block header
+							include ../parts/_header
 					main.wrapper__item.wrapper__item--main.main#main
 						block main
+							.container
+								include ../parts/_content
 					aside.wrapper__item.wrapper__item--aside.aside#aside
 						block aside
 							include ../parts/_aside

@@ -28,10 +28,15 @@
 @import "parts/section.about";
 @import "parts/section.technologes";
 @import "parts/section.skills";
-// @import "parts/section.blog";
+@import "parts/section.blog";
 @import "parts/section.feedback";
+@import "parts/pager";
+@import "parts/pagination";
+@import "parts/breadcrumbs";
+@import "parts/list";
 @import "parts/footer";
 @import "parts/totopbutton";
 
-
+@import "templates/404";
+@import "templates/singular";
 @import "templates/search";

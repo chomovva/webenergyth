@@ -1,0 +1,18 @@
+extend layout/_index
+
+
+block variables
+	- page.type = 'blog archive category';
+	- page.title = 'Блог';
+
+
+block main
+	.container
+		
+		h1 #{page.title}
+		include parts/_breadcrumbs
+		
+		h2.sr-only Список постов
+		include parts/_list
+		
+		include parts/_pagination

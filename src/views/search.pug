@@ -1,0 +1,41 @@
+extend layout/_index
+
+
+block variables
+	- page.type = 'search';
+	- page.title = 'Результаты поиска';
+
+
+mixin search_entry
+	article.entry.mb-3
+		a.thumbnail( href='#' )
+			img.wp-post-thumbnail( src=src.userfiles+'entry01.jpg' alt='Заголовок поста' )
+			.counter 1
+		.inner
+			div
+				h3.mb-0.d-inline-block.mr-3 Заголовок поста в результатах поиска
+				time.small.d-inline-block( datetime="2001-05-15 19:00" ) 15 мая 2021
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			a.btn.btn-sm.btn-primary( href='#' ) Подробнее
+
+
+block main
+	.container
+
+		.heading
+			h1 #{page.title}
+			.result #[span.label Всего найдено:] #[span.value 42]
+
+		include forms/_search
+		
+		h2.sr-only Список постов
+
+		.wrap.mt-3
+			+search_entry
+			+search_entry
+			+search_entry
+			+search_entry
+			+search_entry
+			+search_entry
+		
+		include parts/_pagination

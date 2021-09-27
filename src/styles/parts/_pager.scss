@@ -1,8 +1,6 @@
 // листалка постов / страниц
 .pager {
 
-	margin: 1rem 0 2rem 0;
-
 	.item {
 		@include td ( none, none );
 		display: flex;
