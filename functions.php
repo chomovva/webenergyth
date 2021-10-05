@@ -29,11 +29,10 @@ get_template_part( 'includes/menus' );
 
 
 if ( is_admin() ) {
-	// isset( $_GET[ 'activated' ] ) && 'themes.php' == $pagenow && get_template_part( 'includes/theme-activate' );
-	// get_template_part( 'includes/taxonomy-template' );
+	isset( $_GET[ 'activated' ] ) && 'themes.php' == $pagenow && get_template_part( 'includes/theme-activate' );
 } else {
-	// get_template_part( 'includes/hooks-public' );
-	// get_template_part( 'includes/enqueue-public' );
+	get_template_part( 'includes/hooks-public' );
+	get_template_part( 'includes/enqueue-public' );
 	get_template_part( 'includes/search-result' );
 }
 
