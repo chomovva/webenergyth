@@ -8,12 +8,12 @@
 	.custom-logo {
 		display: block;
 		max-width: 6rem;
-		max-height: 6rem;
+		max-height: 3rem;
 		width: auto;
 		height: auto;
 	}
 
-	.list {
+	.menu {
 		display: none;
 		list-style-type: none;
 		margin-left: auto;
@@ -22,14 +22,27 @@
 		}
 	}
 
-	.list a {
+	.menu a {
 		display: block;
-		padding: .5rem 1rem;
+		padding: .5rem 1.25rem;
 		font-weight: 500;
 	}
 
-	.list a.current-menu-item {
+	.menu a.current-menu-item {
 		color: $brand-primary;
+	}
+
+	.menu li {
+		display: flex;
+		align-items: center;
+	}
+
+	.menu li + li::before {
+		content: '';
+		width: 1px;
+		height: 1em;
+		background-color: rgba( 0, 0, 0, .10 );
+		border-right: 1px solid rgba( 255, 255, 255, .75 );
 	}
 
 	.burger {

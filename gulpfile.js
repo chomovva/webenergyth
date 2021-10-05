@@ -31,14 +31,6 @@ gulp.task( 'public_scripts', function() {
 );
 
 
-gulp.task( 'init_scripts', function () {
-	return gulp.src( [ './src/scripts/init/*.js' ] )
-		.pipe( plumber() )
-		.pipe( gulp.dest( './scripts/init/' ) )
-		.on( 'end', browserSync.reload );
-} );
-
-
 gulp.task( 'video', function () {
 	return gulp.src( './src/video/*.*' )
 		.pipe( gulp.dest( './video/' ) );
@@ -155,7 +147,7 @@ gulp.task( 'clearcache', function () {
 gulp.task( 'minify', gulp.series( 'minstyles', 'minscripts' ) );
 
 
-gulp.task( 'scripts', gulp.series( 'public_scripts', 'init_scripts', 'other_scripts', 'minscripts' ) );
+gulp.task( 'scripts', gulp.series( 'public_scripts', 'other_scripts', 'minscripts' ) );
 
 
 
@@ -172,6 +164,6 @@ gulp.task( 'watch', function () {
 
 
 gulp.task( 'default', gulp.series(
-	gulp.parallel( 'html', 'index', 'styles', 'scripts', 'images', 'userfiles', 'video', 'fonts', 'public_scripts', 'init_scripts' ),
+	gulp.parallel( 'html', 'index', 'styles', 'scripts', 'images', 'userfiles', 'video', 'fonts', 'public_scripts' ),
 	gulp.parallel( 'watch', 'server' )
 ) );

@@ -6,16 +6,16 @@ block variables
 	- page.title = 'Результаты поиска';
 
 
-mixin search_entry
-	article.entry.mb-3
-		a.thumbnail( href='#' )
+mixin search_entry( args )
+	article.entry.mb-3.d-flex
+		a.thumbnail.mt-1.mr-3( href='#' )
 			img.wp-post-thumbnail( src=src.userfiles+'entry01.jpg' alt='Заголовок поста' )
-			.counter 1
+			.counter #{args.count}
 		.inner
 			div
 				h3.mb-0.d-inline-block.mr-3 Заголовок поста в результатах поиска
 				time.small.d-inline-block( datetime="2001-05-15 19:00" ) 15 мая 2021
-			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 			a.btn.btn-sm.btn-primary( href='#' ) Подробнее
 
 
@@ -31,11 +31,11 @@ block main
 		h2.sr-only Список постов
 
 		.wrap.mt-3
-			+search_entry
-			+search_entry
-			+search_entry
-			+search_entry
-			+search_entry
-			+search_entry
+			+search_entry( { count: 1 } )
+			+search_entry( { count: 2 } )
+			+search_entry( { count: 3 } )
+			+search_entry( { count: 4 } )
+			+search_entry( { count: 5 } )
+			+search_entry( { count: 6 } )
 		
 		include parts/_pagination

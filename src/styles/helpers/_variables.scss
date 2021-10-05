@@ -32,12 +32,12 @@ $brand-colors:
 
 $body-color: #ffffff;
 $text-color: $brand-default;
-$link-color: darken( $text-color, 50% );
+$link-color: darken( $text-color, 25% );
 
 $font-size-base:    16px;
 $line-height-base:	24 / 16;
 
-$font-family-base: 'Roboto', sans-serif;
+$font-family-base: 'Montserrat', sans-serif;
 $font-family-titles: $font-family-base;
 
 $border-color: lighten( $brand-default, 45% );

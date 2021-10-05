@@ -2,9 +2,9 @@
 
 	var $mobilenav = jQuery( '#mobilenav' );
 	var $body = jQuery( 'body' );
-	var $wrapper = jQuery( '#wrapper' );
 
-	function Toggle() {
+	function Toggle( event ) {
+		event.preventDefault();
 		if ( $mobilenav.hasClass( 'active' ) ) {
 			$body.css( 'overflow', 'auto' );
 			$mobilenav.removeClass( 'active' );
@@ -14,6 +14,6 @@
 		}
 	}
 
-	$wrapper.on( 'click', '[data-mobilenav=toggle]', Toggle );
+	$body.on( 'click', '[data-mobilenav=toggle]', Toggle );
 
 } )();

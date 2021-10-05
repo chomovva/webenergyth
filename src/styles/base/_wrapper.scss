@@ -29,15 +29,15 @@
 		visibility: hidden;
 		opacity: 0;
 		transition: opacity .2s, visibility .2s, transform .2s;
-		transform-origin: center center;
-		transform: scale( .8 );
+		transform-origin: top right;
+		transform: scale( .8 ) translate( 25%, -25% );
 		overflow-y: scroll;
 	}
 
 	&__item--mobilenav.active {
 		visibility: visible;
 		opacity: 1;
-		transform: scale( 1 );
+		transform: scale( 1 ) translate( 0, 0 );
 	}
 
 	&__item--header {

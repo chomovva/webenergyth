@@ -40,27 +40,39 @@
 		transform: rotate( -45deg );
 	}
 
-	.list {
+	.menu {
 		text-align: center;
 		list-style-type: none;
 		padding-left: 0;
 	}
 
-	.list li + li {
+	.menu li + li {
 		margin-top: .5rem;
 	}
 
-	.list a {
+	.menu a {
 		@extend %lead;
 		display: block;
 		padding: .5rem 0;
 		color: #fff;
-		border-bottom: .1rem solid transparent;
-		transition: border-bottom-color .25s;
 	}
 
-	.list a:hover {
+	.menu a:hover {
+		text-decoration: underline;
+	}
+
+	h2, h3, h4, h5 {
+		color: #fff;
+	}
+
+	table tr + tr {
+		border-top-color: #fff;
+	}
+
+	th {
+		border-top-color: #fff;
 		border-bottom-color: #fff;
+		color: #fff;
 	}
 
 }

@@ -5,8 +5,8 @@
 
 
 .font-italic, .font-style-italic { font-style: italic; }
-.font-bold, .font-weight-bold { font-weight: bold; }
-.font-normal, .font-weight-normal { font-weight: normal;	font-style: normal; }
+.font-bold, .font-weight-bold { font-weight: bold; color: $link-color; }
+.font-normal, .font-weight-normal { font-weight: normal; font-style: normal; }
 
 .text-lowercase      { text-transform: lowercase; }
 .text-uppercase      { text-transform: uppercase; }

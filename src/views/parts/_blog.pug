@@ -5,7 +5,19 @@
 section.section.section--blog.blog.bg-gray#blog
 	
 	.container
-		h2#blog-title Мой блог
+
+		div
+			h2#blog-title.d-inline-block.mr-3.pr-3 Мой блог
+			.d-inline-block
+				p.d-inline-block.mr-3 Категории:
+				ul.categories.d-inline-block.pl-0.small
+					li.d-inline-block.mr-3: a( href='#' ) Java
+					li.d-inline-block.mr-3: a( href='#' ) Oracle
+					li.d-inline-block.mr-3: a( href='#' ) freelance
+					li.d-inline-block.mr-3: a( href='#' ) Python
+					li.d-inline-block.mr-3: a( href='#' ) JavaScript
+					li.d-inline-block.mr-3: a( href='#' ) OpenCart
+					li.d-inline-block.mr-3: a( href='#' ) WordPress
 
 		include _list
 
