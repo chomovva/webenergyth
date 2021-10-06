@@ -35,3 +35,23 @@ function add_theme_container_wrap_end() {
 }
 
 add_action( 'theme_container_after', 'webenergyth\add_theme_container_wrap_end', 10, 0 );
+
+
+/**
+ * 
+ * */
+function print_scripts_head() {
+    echo force_balance_tags( get_theme_mod( 'additionalscriptswphead' ) );
+}
+
+add_action( 'wp_head', 'webenergyth\print_scripts_head', 99, 0 );
+
+
+/**
+ * 
+ * */
+function print_scripts_footer() {
+    echo force_balance_tags( get_theme_mod( 'additionalscriptswpfooter' ) );
+}
+
+add_action( 'wp_footer', 'webenergyth\print_scripts_footer', 99, 0 );

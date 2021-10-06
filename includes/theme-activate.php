@@ -18,12 +18,18 @@ function setup_default_mods( $old_name ) {
 	}
 	update_option( 'theme_mods_' . $theme_slug, array_merge( [
 
+		'sidemobiletitle'          => __( 'Сайдбар', WEBENERGYTH_TEXTDOMAIN ),
+		'sidecolumntitle'          => __( 'Сайдбар', WEBENERGYTH_TEXTDOMAIN ),
+
+		'footercopyauthor'         => '',
+		'footercopytitle'          => get_bloginfo( 'name', 'raw' ),
+
 		// настройки шаблона Архива
-		'archivetitleprefix'         => '',
+		'archivetitleprefix'       => '',
 
 		// страница ошибки 404
-		'error404title'              => 'Страница не найдена',
-		'error404description'        => '',
+		'error404title'            => __( 'Страница не найдена', WEBENERGYTH_TEXTDOMAIN ),
+		'error404description'      => '',
 
 	], $mods ) );
 }

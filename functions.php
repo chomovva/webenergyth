@@ -38,11 +38,12 @@ if ( is_admin() ) {
 
 
 if ( is_customize_preview() ) {
-	// get_template_part( 'customizer/wp-customize-control-separator' );
-	// get_template_part( 'customizer/wp-customize-control-range' );
-	// get_template_part( 'customizer/wp-customize-control-list' );
-	// get_template_part( 'customizer/wp-customize-control-gallery' );
-	// get_template_part( 'customizer/wp-customize-control-tinymce-editor' );
-	// get_template_part( 'customizer/register-panels' );
-	// get_template_part( 'customizer/additional-scripts' );
+	get_template_part( 'customizer/control', 'separator' );
+	get_template_part( 'customizer/control', 'list' );
+	get_template_part( 'customizer/control', 'tinymce-editor' );
+	get_template_part( 'customizer/panels' );
+	get_template_part( 'customizer/scripts' );
+	get_template_part( 'customizer/template', 'archive' );
+	get_template_part( 'customizer/template', '404' );
+	
 }
