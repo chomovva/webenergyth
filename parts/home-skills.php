@@ -12,7 +12,7 @@ $excerpt = trim( get_theme_mod( 'homeskillsexcerpt' ) );
 $entries = get_theme_mod( 'homeskills' );
 $content = '';
 $thumbnail_src = get_theme_mod( 'homeskillsthumbnailsrc' );
-$thumbnail_id = is_url( $thumbnail_src ) ? : 0;
+$thumbnail_id = is_url( $thumbnail_src ) ? attachment_url_to_postid( removing_image_size_from_url( $thumbnail_src ) ) : 0;
 
 if ( is_string( $entries ) ) {
 	$entries = json_decode( $entries, true );

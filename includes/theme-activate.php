@@ -36,7 +36,7 @@ function setup_default_mods( $old_name ) {
 		'homeskillsusedby'          => false,
 		'homeskillstitle'           => __( 'Мои навыки', WEBENERGYTH_TEXTDOMAIN ),
 		'homeskillsexcerpt'         => '',
-		'homeskills'                => '',
+		'homeskills'                => [],
 		'homeskillsthumbnailsrc'    => '',
 
 		'homefeedbackusedby'        => false,

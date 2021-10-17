@@ -37,6 +37,8 @@ if ( ! defined( 'ABSPATH' ) ) { exit; };
 						'fallback_cb'     => '__return_empty_string',
 					] ); ?>
 
+					<?php get_template_part( 'parts/languages' ); ?>
+
 					<button class="burger" id="burger" data-mobilenav="toggle">
 						<span class="bar bar1"></span><span class="bar bar2"></span><span class="bar bar3"></span>
 						<span class="sr-only"><?php esc_html_e( 'Меню', WEBENERGYTH_TEXTDOMAIN ); ?></span>

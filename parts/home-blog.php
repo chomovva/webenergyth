@@ -11,6 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; };
 
 
 $title = trim( get_theme_mod( 'homeblogtitle' ) );
+$description = trim( get_theme_mod( 'homeaboutdescription' ) );
 $tags = get_theme_mod( 'homeblogtags' );
 $label = trim( get_theme_mod( 'homebloglabel' ) );
 $numberposts = absint( get_theme_mod( 'homeblognumberposts' ) );
@@ -33,9 +34,11 @@ if ( is_array( $entries ) && ! empty( $entries ) ) {
 		include get_theme_file_path( 'views/entry-archive.php' );
 	}
 	wp_reset_postdata();
-	$content = ob_get_contents();
+	$content = trim( ob_get_contents() );
 	ob_end_clean();
+
+	if ( ! empty( $content ) ) {
+		include get_theme_file_path( 'views/home-blog.php' );
+	}
+
 }
-
-
-include get_theme_file_path( 'views/home-blog.php' );

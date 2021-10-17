@@ -1,0 +1,399 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2021-10-17 21:14+0300\n"
+"PO-Revision-Date: 2021-10-17 21:37+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr_e;esc_attr__;esc_html_e;esc_html__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: src\n"
+"X-Poedit-SearchPathExcluded-2: scripts\n"
+"X-Poedit-SearchPathExcluded-3: images\n"
+"X-Poedit-SearchPathExcluded-4: examples\n"
+"X-Poedit-SearchPathExcluded-5: styles\n"
+
+#: customizer/control-list.php:39
+msgid "Использовать"
+msgstr "Use"
+
+#: customizer/control-list.php:43 customizer/socials.php:32
+#: customizer/template-404.php:33
+msgid "Заголовок"
+msgstr "Title"
+
+#: customizer/control-list.php:89
+msgid "Открыть форму редактирования блока"
+msgstr "Open block editing form"
+
+#: customizer/control-list.php:90
+msgid "Редактировать блок"
+msgstr "Edit block"
+
+#: customizer/control-list.php:97
+msgid "Закрыть форму"
+msgstr "Close the form"
+
+#: customizer/control-list.php:98
+msgid "Закрыть"
+msgstr "Close"
+
+#: customizer/control-list.php:232
+msgid "выбор изображения"
+msgstr "image selection"
+
+#: customizer/control-list.php:233 customizer/control-list.php:234
+#: customizer/control-list.php:276
+msgid "Выберите изображение"
+msgstr "Select an image"
+
+#: customizer/control-list.php:236
+msgid "Очистить"
+msgstr "Clear"
+
+#: customizer/control-list.php:237
+msgid "Очистить изображение"
+msgstr "Clear image"
+
+#: customizer/control-list.php:277
+msgid "Выберите изображения галереи"
+msgstr "Select gallery images"
+
+#: customizer/control-list.php:334
+msgid "Удалить блок"
+msgstr "Delete block"
+
+#: customizer/control-list.php:335
+msgid "Удалить"
+msgstr "Delete"
+
+#: customizer/control-terms.php:82
+msgid "Подходящие термы не найдены!"
+msgstr "No matching terms found!"
+
+#: customizer/home-blog.php:15 customizer/parts-about.php:15
+#: customizer/parts-blog.php:15 customizer/parts-feedback.php:15
+#: customizer/parts-jumbotron.php:15 customizer/parts-skills.php:15
+#: customizer/parts-technologes.php:15
+msgid "Главная страница"
+msgstr "Home page"
+
+#: customizer/home-blog.php:15 customizer/parts-blog.php:15
+msgid "Блог"
+msgstr "Blog"
+
+#: customizer/home-blog.php:32 customizer/parts-about.php:32
+#: customizer/parts-blog.php:32 customizer/parts-feedback.php:32
+#: customizer/parts-jumbotron.php:32 customizer/parts-skills.php:32
+#: customizer/parts-technologes.php:32
+msgid "Использовать секцию"
+msgstr "Use section"
+
+#: customizer/home-blog.php:52 customizer/parts-about.php:52
+#: customizer/parts-blog.php:52 customizer/parts-feedback.php:52
+#: customizer/parts-skills.php:52 customizer/parts-technologes.php:52
+msgid "Заголовок &lt;H2&gt;"
+msgstr "Title &lt;H2&gt;"
+
+#: customizer/home-blog.php:74 customizer/parts-blog.php:152
+msgid "Список тегов"
+msgstr "Tag List"
+
+#: customizer/panels.php:19
+msgid "Блоки темы"
+msgstr "Theme blocks"
+
+#: customizer/panels.php:30
+msgid "Шаблоны страниц"
+msgstr "Page templates"
+
+#: customizer/parts-about.php:15
+msgid "Об авторе"
+msgstr "About the author"
+
+#: customizer/parts-about.php:74 customizer/parts-jumbotron.php:118
+#: customizer/template-404.php:55
+msgid "Описание"
+msgstr "Description"
+
+#: customizer/parts-blog.php:73
+msgid "Категория"
+msgstr "Category"
+
+#: customizer/parts-blog.php:102
+msgid "Количество записей"
+msgstr "Number of records"
+
+#: customizer/parts-blog.php:127
+msgid "Подпись кнопки"
+msgstr "Button signature"
+
+#: customizer/parts-feedback.php:15
+msgid "Обратная связь"
+msgstr "Feedback"
+
+#: customizer/parts-feedback.php:73 customizer/parts-skills.php:73
+msgid "Подзаголовок"
+msgstr "Subtitle"
+
+#: customizer/parts-feedback.php:94
+msgid "Шорткод формы"
+msgstr "Form shortcode"
+
+#: customizer/parts-footer.php:15
+msgid "Подвал сайта"
+msgstr "Site footer"
+
+#: customizer/parts-footer.php:32
+msgid "Копирайт (автор)"
+msgstr "Copyright (author)"
+
+#: customizer/parts-footer.php:53
+msgid "Копирайт (описание)"
+msgstr "Copyright (description)"
+
+#: customizer/parts-footer.php:74
+msgid "Блок социальных сетей"
+msgstr "Social media block"
+
+#: customizer/parts-jumbotron.php:15
+msgid "Первый экран"
+msgstr "First screen"
+
+#: customizer/parts-jumbotron.php:52
+msgid "Заголовок &lt;H1&gt;"
+msgstr "Title &lt;H1&gt;"
+
+#: customizer/parts-jumbotron.php:73
+msgid "Подпись кнопки;"
+msgstr "Button signature;"
+
+#: customizer/parts-jumbotron.php:94
+msgid "Атрибут HREF кнопки"
+msgstr "Button HREF Attribute"
+
+#: customizer/parts-jumbotron.php:142
+msgid "Превью"
+msgstr "Preview"
+
+#: customizer/parts-skills.php:15
+msgid "Скилы"
+msgstr "Skills"
+
+#: customizer/parts-skills.php:104
+msgid "Список"
+msgstr "List"
+
+#: customizer/parts-skills.php:110
+msgid "Значение"
+msgstr "Value"
+
+#: customizer/parts-skills.php:141
+msgid "Фото"
+msgstr "Photo"
+
+#: customizer/parts-technologes.php:15
+msgid "Технологии"
+msgstr "Technologies"
+
+#: customizer/parts-technologes.php:53
+msgid "Заголовок скрыт"
+msgstr "Title is hidden"
+
+#: customizer/parts-technologes.php:75
+msgid "Логотипы"
+msgstr "Logos"
+
+#: customizer/scripts.php:15
+msgid "Дополнительные скрипты"
+msgstr "Additional scripts"
+
+#: customizer/scripts.php:30
+msgid "Выводится перед закрывающим тегом HEAD"
+msgstr "Drawn before the closing HEAD tag"
+
+#: customizer/scripts.php:49
+msgid "Выводится в подвале сайта перед закрывающим тегом BODY"
+msgstr "Displayed in the footer of the site before the closing BODY tag"
+
+#: customizer/socials.php:15
+msgid "Социальные сети и контакты"
+msgstr "Social networks and contacts"
+
+#: customizer/socials.php:16
+msgid ""
+"Используются в шапке и подвале сайта. В полях вводятся значения атрибут href."
+msgstr ""
+"Used in the header and footer of the site. The fields are filled with values "
+"for the href attribute."
+
+#: customizer/socials.php:33
+msgid "Скрыт, тег &lt;P&gt;"
+msgstr "Hidden, tag &lt;P&gt;"
+
+#: customizer/template-404.php:15
+msgid "404"
+msgstr "404"
+
+#: customizer/template-404.php:16
+msgid "Страница ошибки 404 (шаблон 404.php)"
+msgstr "404 error page (404.php template)"
+
+#: customizer/template-archive.php:15
+msgid "Архив"
+msgstr "Archive"
+
+#: customizer/template-archive.php:16
+msgid "Страницы архива, категорий (шаблон index.php)"
+msgstr "Archive, category pages (index.php template)"
+
+#: customizer/template-archive.php:33
+msgid "Префикс"
+msgstr "Prefix"
+
+#: customizer/template-archive.php:34
+msgid "Текст перед заголовком архива"
+msgstr "Text before archive header"
+
+#: footer.php:26
+msgid ""
+"Разработка: <a href=\"https://chomovva.ru/\" target=\"_blank\">chomovva</a>"
+msgstr ""
+"Development: <a href=\"https://chomovva.ru/\" target=\"_blank\"> chomovva</a>"
+
+#: header.php:44
+msgid "Меню"
+msgstr "Menu"
+
+#: includes/menus.php:15
+msgid "Главное меню"
+msgstr "Main menu"
+
+#: includes/menus.php:16
+msgid "Мобильное меню"
+msgstr "Mobile Menu"
+
+#: includes/sidebars.php:15
+msgid "Мобильный сайдбар"
+msgstr "Mobile sidebar"
+
+#: includes/sidebars.php:17
+msgid "Отображается в мобильном меню."
+msgstr "Displayed in the mobile menu."
+
+#: includes/sidebars.php:25
+msgid "Колонка"
+msgstr "Speaker"
+
+#: includes/sidebars.php:27
+msgid ""
+"Отображается на страницах архива (категории) и отдельном шаблоне для "
+"постоянных страниц и постов."
+msgstr ""
+"Displayed on archive (category) pages and a separate template for permanent "
+"pages and posts."
+
+#: includes/theme-activate.php:29
+msgid "Обо мне"
+msgstr "About me"
+
+#: includes/theme-activate.php:37
+msgid "Мои навыки"
+msgstr "My skills"
+
+#: includes/theme-activate.php:43
+msgid "Связаться со мной"
+msgstr "Contact with me"
+
+#: includes/theme-activate.php:48
+msgid "Мой блог"
+msgstr "My blog"
+
+#: includes/theme-activate.php:50
+msgid "Смотреть ещё"
+msgstr "See more"
+
+#: includes/theme-activate.php:57 includes/theme-activate.php:58
+#: sidebar-column.php:17 sidebar.php:17
+msgid "Сайдбар"
+msgstr "Sidebar"
+
+#: includes/theme-activate.php:66
+msgid "Страница не найдена"
+msgstr "Page not found"
+
+#: includes/theme-activate.php:69
+msgid "Мои профили социальных сетей и на фриланс биржах"
+msgstr "My social media profiles and freelance exchanges"
+
+#: includes/theme-supports.php:27
+msgid "linkedIn"
+msgstr "linkedIn"
+
+#: includes/theme-supports.php:28
+msgid "Facebook"
+msgstr "Facebook"
+
+#: includes/theme-supports.php:29
+msgid "instaram"
+msgstr "instaram"
+
+#: includes/theme-supports.php:30
+msgid "freelancehunt"
+msgstr "freelancehunt"
+
+#: includes/theme-supports.php:31
+msgid "Kwork"
+msgstr "Kwork"
+
+#: index.php:23 search.php:30
+msgid "Список постов"
+msgstr "List of posts"
+
+#: parts/breadcrumbs.php:20
+msgid "Главная"
+msgstr "Home"
+
+#: parts/mobilenav.php:16
+msgid "Закрыть меню"
+msgstr "Close menu"
+
+#: parts/pager.php:19
+msgid "Смотреть предыдущий пост"
+msgstr "View previous post"
+
+#: parts/pager.php:23
+msgid "Смотреть следующий пост"
+msgstr "Watch next post"
+
+#: search.php:19
+msgid "Результаты поиска"
+msgstr "Searching results"
+
+#: search.php:21
+msgid "Всего найдено:"
+msgstr "Total found:"
+
+#: searchform.php:14
+msgid "Поиск по сайту"
+msgstr "Site search"
+
+#: searchform.php:15
+msgid "Найти"
+msgstr "Find"
+
+#: views/entry-archive.php:27 views/entry-search.php:28
+msgid "Подробнее"
+msgstr "More details"
+
+#: views/no-posts.php:10
+msgid "Ничего не найдено"
+msgstr "Nothing found"

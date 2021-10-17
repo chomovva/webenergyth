@@ -17,9 +17,9 @@ if ( ! defined( 'ABSPATH' ) ) { exit; };
 			<h2 class="text-center" id="about-title"><?php echo $title; ?></h2>
 		<?php endif; ?>
 		
-		<?php if ( isset( $desctiption ) && ! empty( $desctiption ) ) : ?>
+		<?php if ( isset( $description ) && ! empty( $description ) ) : ?>
 			<div class="description" id="about-desctiption">
-				<?php echo $desctiption; ?>
+				<?php echo $description; ?>
 			</div>
 		<?php endif; ?>
 

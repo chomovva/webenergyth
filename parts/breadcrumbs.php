@@ -17,33 +17,14 @@ if ( function_exists( 'yoast_breadcrumb' ) ) {
 
 } else {
 
-	if ( ! is_front_page() ) {
+	printf( $link_format, home_url(), __( 'Главная', WEBENERGYTH_TEXTDOMAIN ) );
+	
+	if ( is_category() || is_single() ) {
+		the_category( ', ' );
+	}
 
-		printf( $link_format, home_url(), __( 'Главная', WEBENERGYTH_TEXTDOMAIN ) );
-		
-		if ( is_category() || is_single() ) {
-			
-				the_category( ' ' );
-
-			}
-
-			if ( is_single() ) {
-
-				echo apply_filters( 'breadcrumbs_default_separator', ' » ' );
-				the_title();
-
-			}
-
-		} elseif ( is_page() ) {
-
-			echo the_title();
-		
-		}
-
-	} else {
-
-		echo __( 'Домашняя страница', WEBENERGYTH_TEXTDOMAIN );
-
+	if ( is_single() || is_page() ) {
+		the_title();
 	}
 }
 
