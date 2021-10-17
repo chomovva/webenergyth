@@ -5,13 +5,6 @@
 
 	p.copyright #[strong.author #{blog.author}] #[br] #[span.title &copy; #{blog.name}], 2021
 
-	.socials
-		p.sr-only Мои профили социальных сетей и на фриланс биржах
-		ul
-			li: a.linkedin( href='#' ) #[span.sr-only Профиль в LinkedIn]
-			li: a.facebook( href='#' ) #[span.sr-only Профиль в Facebook]
-			li: a.instagram( href='#' ) #[span.sr-only Профиль в Instagram]
-			li: a.freelancehunt( href='#' ) #[span.sr-only Профиль в FreelanceHunt]
-			li: a.kwork( href='#' ) #[span.sr-only Профиль в KWork]
+	include ../parts/_socials
 
 	p.developer Разработка: #[a( href='https://chomovva.ru/' ) chomovva]

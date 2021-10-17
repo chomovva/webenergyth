@@ -21,18 +21,12 @@ if ( class_exists( 'WP_Customize_Control' ) && ! class_exists( 'WP_Customize_Con
 		public $type = 'tinymce_editor';
 
 
-		protected $textdomain;
-
-
 		public function __construct( $manager, $id, $args = [] ) {
 			parent::__construct( $manager, $id, $args );
-			if ( ! array_key_exists( 'textdomain', $args ) ) {
-				$args[ 'textdomain' ] = 'WPCustomizeTinymceEditor';
-			}
 			$this->input_attrs = array_merge( $this->input_attrs, [
 				'rows'  => '10',
 				'id'    => esc_attr( $this->id ),
-				'class' => 'customize-control-tinymce-editor',
+				'class' => 'control-editor',
 			] );
 		}
 
@@ -45,15 +39,15 @@ if ( class_exists( 'WP_Customize_Control' ) && ! class_exists( 'WP_Customize_Con
 			wp_enqueue_script( 'wp-i18n' );
 			wp_enqueue_script( 'customize-preview' );
 			wp_enqueue_script(
-				'wp-customize-control-tinymce-editor',
-				get_theme_file_uri( 'scripts/wp-customize-control-tinymce-editor.js' ),
+				'control-editor',
+				get_theme_file_uri( 'scripts/control-editor.js' ),
 				[ 'jquery', 'customize-preview' ],
-				filemtime( get_theme_file_path( 'scripts/wp-customize-control-tinymce-editor.js' ) ),
+				filemtime( get_theme_file_path( 'scripts/control-editor.js' ) ),
 				true
 			);
 			wp_add_inline_script(
-				'wp-customize-control-tinymce-editor',
-				"jQuery( document ).ready( function () { jQuery( '#customize-control-{$this->id}' ).WPCustomizeTinymceEditor(); } );",
+				'control-editor',
+				'jQuery( document ).ready( function () { jQuery( \'#customize-control-' . $this->id . '\' ).WPCustomizeTinymceEditor(); } );',
 				'after'
 			);
 		}

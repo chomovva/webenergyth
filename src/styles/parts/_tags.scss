@@ -5,20 +5,15 @@
 		display: inline-block;
 	}
 
-	a:hover {
-		color: $link-color;
-		text-decoration: none;
-	}
-
-	a:hover .label {
-		text-decoration: underline;
-	}
-
-	a::before {
+	li::before {
 		@extend .text-primary;
 		content: '#';
 		font-weight: 600;
 		margin-right: .15em;
+	}
+
+	a:hover {
+		color: $link-color;
 	}
 
 }

@@ -4,15 +4,32 @@
 get_header( '404' );
 
 
+$title = trim( get_theme_mod( 'error404title' ) );
+$description = trim( get_theme_mod( 'error404description' ) );
+
+
 ?>
 
 
 <div class="container text-center pt-3 pb-3">
 
-	<img class="logo lazy center-block" src="../images/error404.png" alt="Страница не найдена">
+	<img class="logo lazy center-block" src="<?php echo esc_attr( get_theme_file_uri( 'images/error404.png' ) ); ?>" alt="<?php echo esc_attr( $title ); ?>">
 	
-	<h1 class="title">Страница не найдена</h1>
+	<?php if ( ! empty( $title ) ) : ?>
+		<h1 id="error404-title" class="title">
+			<?php echo $title; ?>
+		</h1>
+	<?php endif; ?>
 	
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae non magnam expedita possimus facilis, placeat, perferendis quam incidunt sapiente id quibusdam, voluptatem est aliquid repellat consectetur, dolorum quas tempora. Ducimus!</p><a class="btn btn-success mt-3" href="home.html">Вернуться на главную</a>
+	<?php if ( ! empty( $description ) ) : ?>
+		<div id="error404-description">
+			<?php echo $description; ?>
+		</div>
+	<?php endif; ?>
 
 </div>
+
+
+<?php
+
+get_footer( '404' )

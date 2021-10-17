@@ -7,16 +7,12 @@ namespace webenergyth;
 if ( ! defined( 'ABSPATH' ) ) { exit; };
 
 
-?>
+$title = trim( get_theme_mod( 'homejumbotrontitle' ) );
+$description = trim( get_theme_mod( 'homejumbotrondescription' ) );
+$thumbnail_src = get_theme_mod( 'homejumbotronthumbnailsrc' );
+$thumbnail_id = is_url( $thumbnail_src ) ? attachment_url_to_postid( removing_image_size_from_url( $thumbnail_src ) ) : 0;
+$label = trim( get_theme_mod( 'homejumbotronbtnlabel' ) );
+$href = trim( get_theme_mod( 'homejumbotronbtnhref' ) );
 
 
-<section class="section section--jumbotron bg-gray" id="jumbotron">
-	<div class="container"><img class="thumbnail" id="jumbotron-thumbnail" src="./userfiles/screen.png" alt="Превью первого єкрана">
-		<div class="content">
-			<h1 id="jumbotron-title">QA blog</h1>
-			<div id="jumbotron-description">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			</div><a class="btn btn-primary mt-3" id="jumbotron-permalink" href="#">Написать мне</a>
-		</div>
-	</div>
-</section>
+include get_theme_file_path( 'views/home-jumbotron.php' );

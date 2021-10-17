@@ -18,18 +18,60 @@ function setup_default_mods( $old_name ) {
 	}
 	update_option( 'theme_mods_' . $theme_slug, array_merge( [
 
-		'sidemobiletitle'          => __( 'Сайдбар', WEBENERGYTH_TEXTDOMAIN ),
-		'sidecolumntitle'          => __( 'Сайдбар', WEBENERGYTH_TEXTDOMAIN ),
+		'homejumbotronusedby'       => false,
+		'homejumbotrontitle'        => get_bloginfo( 'title' ),
+		'homejumbotrondescription'  => get_bloginfo( 'description' ),
+		'homejumbotronthumbnailsrc' => '',
+		'homejumbotronbtnlabel'     => '',
+		'homejumbotronbtnhref'      => '',
 
-		'footercopyauthor'         => '',
-		'footercopytitle'          => get_bloginfo( 'name', 'raw' ),
+		'homeaboutusedby'           => false,
+		'homeabouttitle'            => __( 'Обо мне', WEBENERGYTH_TEXTDOMAIN ),
+		'homeaboutdescription'      => '',
 
-		// настройки шаблона Архива
-		'archivetitleprefix'       => '',
+		'hometechnologesusedby'     => false,
+		'hometechnologestitle'      => '',
+		'hometechnologes'           => '',
 
-		// страница ошибки 404
-		'error404title'            => __( 'Страница не найдена', WEBENERGYTH_TEXTDOMAIN ),
-		'error404description'      => '',
+		'homeskillsusedby'          => false,
+		'homeskillstitle'           => __( 'Мои навыки', WEBENERGYTH_TEXTDOMAIN ),
+		'homeskillsexcerpt'         => '',
+		'homeskills'                => '',
+		'homeskillsthumbnailsrc'    => '',
+
+		'homefeedbackusedby'        => false,
+		'homefeedbacktitle'         => __( 'Связаться со мной', WEBENERGYTH_TEXTDOMAIN ),
+		'homefeedbackexcerpt'       => '',
+		'homefeedbackshortcode'     => '',
+
+		'homeblogusedby'            => false,
+		'homeblogtitle'             => __( 'Мой блог', WEBENERGYTH_TEXTDOMAIN ),
+		'homeblogtags'              => [],
+		'homebloglabel'             => __( 'Смотреть ещё', WEBENERGYTH_TEXTDOMAIN ),
+		'homeblogcategoryid'        => 0,
+		'homeblognumberposts'       => 6,
+
+		'additionalscriptswphead'   => '',
+		'additionalscriptswpfooter' => '',
+
+		'sidemobiletitle'           => __( 'Сайдбар', WEBENERGYTH_TEXTDOMAIN ),
+		'sidecolumntitle'           => __( 'Сайдбар', WEBENERGYTH_TEXTDOMAIN ),
+
+		'footercopyauthor'          => '',
+		'footersocialsusedby'       => false,
+		'footercopytitle'           => get_bloginfo( 'name', 'raw' ),
+
+		'archivetitleprefix'        => '',
+
+		'error404title'             => __( 'Страница не найдена', WEBENERGYTH_TEXTDOMAIN ),
+		'error404description'       => '',
+
+		'socialstitle'              => __( 'Мои профили социальных сетей и на фриланс биржах', WEBENERGYTH_TEXTDOMAIN ),
+		'socialslinkedinhrefattr' => '',
+		'socialsfacebookhrefattr' => '',
+		'socialsinstagramhrefattr' => '',
+		'socialsfreelancehunthrefattr' => '',
+		'socialskworkhrefattr' => '',
 
 	], $mods ) );
 }

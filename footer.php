@@ -16,14 +16,14 @@ if ( ! defined( 'ABSPATH' ) ) { exit; };
 
 					<p class="copyright">
 						<?php if ( ! empty( trim( $author = get_theme_mod( 'footercopyauthor' ) ) ) ) : ?>
-							<strong class="author"><?php echo $author; ?></strong> <br>
+							<strong id="footer-copy-author" class="author"><?php echo $author; ?></strong> <br>
 						<?php endif; ?>
-						<span class="title">&copy; <?php echo get_theme_mod( 'footercopytitle', get_bloginfo( 'name', 'raw' ) ); ?></span>, <?php echo date( 'Y' ); ?>
+						<span id="footer-copy-title" class="title">&copy; <?php echo get_theme_mod( 'footercopytitle', get_bloginfo( 'name', 'raw' ) ); ?></span>, <?php echo date( 'Y' ); ?>
 					</p>
 
-					<?php get_template_part( 'parts/socials' ); ?>
+					<?php if ( get_theme_mod( 'footersocialsusedby' ) ) : get_template_part( 'parts/socials' ); endif; ?>
 
-					<p class="developer">Разработка: <a href="https://chomovva.ru/">chomovva</a></p>
+					<p class="developer"><?php _e( 'Разработка: <a href="https://chomovva.ru/" target="_blank">chomovva</a>', WEBENERGYTH_TEXTDOMAIN ); ?></p>
 				</div>
 			</footer>
 			<?php wp_footer(); ?>

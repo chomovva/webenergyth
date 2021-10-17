@@ -4,6 +4,9 @@
 namespace webenergyth;
 
 
+use WP_Term;
+
+
 if ( ! defined( 'ABSPATH' ) ) { exit; };
 
 
@@ -55,3 +58,19 @@ function print_scripts_footer() {
 }
 
 add_action( 'wp_footer', 'webenergyth\print_scripts_footer', 99, 0 );
+
+
+/**
+ * Добавляет '#' к тегам
+ * */
+function add_number_sign_to_tag_title( $title, $original_title, $prefix ) {
+    if ( is_main_query() ) {
+        $queried_object = get_queried_object();
+        if ( $queried_object instanceof WP_Term && 'post_tag' == $queried_object->taxonomy ) {
+            $title = '<span class="text-primary font-bold">#</span>' . $title;
+        }
+    }
+    return $title;
+}
+
+add_filter( 'get_the_archive_title', 'webenergyth\add_number_sign_to_tag_title', 10, 3 );

@@ -17,9 +17,3 @@ if ( ! defined( 'ABSPATH' ) ) { exit; };
 <div class="content">
 	<?php the_content( null, false ); ?>
 </div>
-
-<?php
-
-get_template_part( 'parts/pager' );
-
-comments_template();

@@ -7,22 +7,9 @@ namespace webenergyth;
 if ( ! defined( 'ABSPATH' ) ) { exit; };
 
 
-?>
+$title = trim( get_theme_mod( 'homefeedbacktitle' ) );
+$excerpt = trim( get_theme_mod( 'homefeedbackexcerpt' ) );
+$shortcode = trim( get_theme_mod( 'homefeedbackshortcode' ) );
 
 
-<section class="section section--feedback feedback bg-gray" id="feedback">
-	<div class="container">
-		<h2 id="feedback-title">Связаться со мной</h2>
-		<p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-		<!--
-		Контактная форма
-		
-		-->
-		<form>
-			<input type="text" value="" placeholder="Ваше имя">
-			<input type="email" value="" placeholder="Ваш email">
-			<textarea placeholder="Сообщение"></textarea>
-			<button class="btn-block" type="submit">Отправить</button>
-		</form>
-	</div>
-</section>
+include get_theme_file_path( 'views/home-feedback.php' );

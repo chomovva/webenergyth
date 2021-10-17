@@ -1,0 +1,27 @@
+.socials ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.socials li {
+	margin: .25rem;
+}
+
+.socials a {
+	@extend %background-icon;
+	display: block;
+	width: 1.25em * $line-height-base;
+	height: 1.25em * $line-height-base;
+}
+
+.socials a.facebook { @extend %icon-facebook; }
+.socials a.linkedin { @extend %icon-linkedin; }
+.socials a.instagram { @extend %icon-instagram; }
+.socials a.fh { @extend %icon-fh; }
+.socials a.kwork { @extend %icon-kwork; }

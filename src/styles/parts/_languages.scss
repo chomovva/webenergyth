@@ -1,0 +1,20 @@
+//
+// Переключалка языков
+
+.languages {
+	@extend %list-unstyled;
+	@extend %list-inline;
+	@extend %small;
+}
+
+.languages .current {
+	background-color: $brand-primary;
+	color: #fff;
+	padding: 0 1rem;
+	font-size: 85%;
+}
+
+.languages a {
+	padding: 0 1rem;
+	display: block;	
+}

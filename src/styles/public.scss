@@ -31,8 +31,10 @@
 @import "parts/section.blog";
 @import "parts/section.feedback";
 @import "parts/pager";
+@import "parts/socials";
 @import "parts/pagination";
 @import "parts/breadcrumbs";
+@import "parts/languages";
 @import "parts/list";
 @import "parts/footer";
 @import "parts/totopbutton";
@@ -42,3 +44,8 @@
 @import "templates/404";
 @import "templates/singular";
 @import "templates/search";
+
+
+@import "wp/customizer";
+@import "wp/adminbar";
+@import "wp/comments";

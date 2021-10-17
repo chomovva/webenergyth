@@ -66,17 +66,15 @@ if ( class_exists( 'WP_Customize_Control' ) && ! class_exists( 'WP_Customize_Con
 			wp_enqueue_script( 'wp-i18n' );
 			wp_enqueue_script( 'jquery-ui-sortable' );
 			wp_enqueue_script( 'chosen', 'https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js', [ 'jquery' ], '1.8.7', true );
-			wp_enqueue_script( 'wp-customize-control-list', get_theme_file_uri( 'scripts/wp-customize-control-list.js' ), [ 'jquery', 'customize-preview', 'wp-util', 'jquery-ui-sortable', 'chosen', 'wp-color-picker', 'jquery-ui-datepicker' ], filemtime( get_theme_file_path( 'scripts/wp-customize-control-list.js' ) ), true );
-			wp_set_script_translations( 'wp-customize-control-list', $this->textdomain );
-			wp_localize_script( 'wp-customize-control-list', $this->id . 'Args', [
-				'restUrl' => get_rest_url(),
-			] );
-			wp_add_inline_script( 'wp-customize-control-list', "jQuery( document ).ready( function () { jQuery( '#customize-control-{$this->id}' ).WPCustomizeControlList( {$this->id}Args ); } );", 'after' );
+			wp_enqueue_script( 'control-list', get_theme_file_uri( 'scripts/control-list.js' ), [ 'jquery', 'customize-preview', 'wp-util', 'jquery-ui-sortable', 'chosen', 'wp-color-picker', 'jquery-ui-datepicker' ], filemtime( get_theme_file_path( 'scripts/control-list.js' ) ), true );
+			wp_set_script_translations( 'control-list', $this->textdomain );
+			wp_localize_script( 'control-list', $this->id . 'Args', [ 'restUrl' => get_rest_url() ] );
+			wp_add_inline_script( 'control-list', 'jQuery( document ).ready( function () { jQuery( \'#customize-control-' . $this->id . '\' ).WPCustomizeControlList( ' . $this->id . 'Args ); } );', 'after' );
 			wp_enqueue_style( 'chosen', 'https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.css', [], '1.8.7', 'all' );
 			wp_enqueue_style( 'wp-color-picker' );
 			wp_enqueue_style( 'code-editor' );
 			wp_enqueue_style( 'jquery-ui', 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css', false, null );
-			wp_enqueue_style( 'wp-customize-control-list', get_theme_file_uri( 'styles/wp-customize-control-list.css' ), [ 'chosen', 'jquery-ui' ], filemtime( get_theme_file_path( 'styles/wp-customize-control-list.css' ) ), 'all' );
+			wp_enqueue_style( 'control-list', get_theme_file_uri( 'styles/control-list.css' ), [ 'chosen', 'jquery-ui' ], filemtime( get_theme_file_path( 'styles/control-list.css' ) ), 'all' );
 		}
 
 		public function render_content() {

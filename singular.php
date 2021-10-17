@@ -23,6 +23,10 @@ if ( have_posts() ) {
 
 }
 
+if ( 'singular-column.php' == get_page_template_slug( get_the_ID() ) ) {
+	get_sidebar( 'column' );
+}
+
 do_action( 'theme_container_after' );
 
 get_footer();

@@ -22,14 +22,14 @@ add_action( 'after_setup_theme', 'webenergyth\theme_supports' );
 /**
  * Возвращает список социальных сетей для кнопок "поделиться"
  * */
-function get_list_of_social_networks( $items = [] ) {
+function get_list_of_socials( $items = [] ) {
 	return array_merge( $items, [
 		'linkedin'      => __( 'linkedIn', WEBENERGYTH_TEXTDOMAIN ),
 		'facebook'      => __( 'Facebook', WEBENERGYTH_TEXTDOMAIN ),
 		'instagram'     => __( 'instaram', WEBENERGYTH_TEXTDOMAIN ),
-		'freelancehunt' => __( 'freelancehunt', WEBENERGYTH_TEXTDOMAIN ),
+		'fh'            => __( 'freelancehunt', WEBENERGYTH_TEXTDOMAIN ),
 		'kwork'         => __( 'Kwork', WEBENERGYTH_TEXTDOMAIN ),
 	] );
 }
 
-add_filter( 'social_networks', 'webenergyth\get_list_of_social_networks', 10, 1 );
+add_filter( 'socials_list', 'webenergyth\get_list_of_socials', 10, 1 );

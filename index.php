@@ -10,29 +10,34 @@ if ( ! defined( 'ABSPATH' ) ) { exit; };
 get_header();
 
 
-?>
-
-
-<div class="container">
+do_action( 'theme_container_before' ); ?>
 	
-	<h1><?php the_archive_title( '', '' ); ?></h1>
+	<h1><?php the_archive_title( '', '' ); ?></h1><?php
 
-	<?php get_template_part( 'parts/breadcrumbs' ); ?>
+	if ( ! is_tag() ) :get_template_part( 'parts/breadcrumbs' ); endif;
 
-	<?php if ( have_posts() ) : ?>
+	the_archive_description( '', '' );
+
+	if ( have_posts() ) : ?>
 
 		<h2 class="sr-only"><?php _e( 'Список постов', WEBENERGYTH_TEXTDOMAIN ); ?></h2>
 		
-		<div class="list">
+		<div class="list mb-3"> <?php
 
-			<?php include get_theme_file_path( 'views/entry-archive.php' ); ?>
+			while ( have_posts() ) :
 
-		</div>
-		
-		<?php the_posts_pagination(); ?>
+				the_post();
 
-	<?php else : include get_theme_file_path( 'views/no-posts.php' ); endif; ?>
+				include get_theme_file_path( 'views/entry-archive.php' );
 
-</div>
+			endwhile; ?>
 
-<?php get_footer();
+		</div> <?php
+
+		the_posts_pagination();
+
+	else : include get_theme_file_path( 'views/no-posts.php' ); endif;
+
+do_action( 'theme_container_after' );
+
+get_footer();

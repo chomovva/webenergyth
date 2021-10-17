@@ -54,7 +54,6 @@
 		@extend %lead;
 		display: block;
 		padding: .5rem 0;
-		color: #fff;
 	}
 
 	.menu a:hover {
@@ -67,6 +66,14 @@
 
 	table tr + tr {
 		border-top-color: #fff;
+	}
+
+	a {
+		color: #fff;
+	}
+
+	p {
+		color: #fff;
 	}
 
 	th {

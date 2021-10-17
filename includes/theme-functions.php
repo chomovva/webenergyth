@@ -4,6 +4,9 @@
 namespace webenergyth;
 
 
+use DOMDocument;
+
+
 if ( ! defined( 'ABSPATH' ) ) { exit; };
 
 
@@ -191,4 +194,13 @@ function translate_list_strings( $list, $keys = [] ) {
 		}
 	}
 	return $list;
+}
+
+
+/**
+ * Используется со списками "записей" созданными классом WP_Customize_Control_list.
+ * Проверяет активен ли элемент списка
+ * */
+function is_entry_usedby( $entry ) {
+	return is_array( $entry ) && ! empty( $entry ) && array_key_exists( 'usedby', $entry ) && $entry[ 'usedby' ] && array_key_exists( 'title', $entry );
 }

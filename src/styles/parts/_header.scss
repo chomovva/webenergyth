@@ -13,6 +13,17 @@
 		height: auto;
 	}
 
+	.languages {
+		margin-left: auto;
+		@include min-width ( $screen-lg ) {
+			margin-left: 1rem;
+		}
+	}
+
+	.languages + .burger {
+		margin-left: 2rem;
+	}
+
 	.menu {
 		display: none;
 		list-style-type: none;
