@@ -32,4 +32,4 @@ $description = trim( get_theme_mod( 'error404description' ) );
 
 <?php
 
-get_footer( '404' )
+get_footer( '404' );

@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; };
 <div class="wrapper__item wrapper__item--mobilenav mobilenav" id="mobilenav">
 
 	<button class="close" data-mobilenav="toggle">
-		<snan class="sr-only"><?php esc_html_e( 'Закрыть меню', WEBENERGYTH_TEXTDOMAIN ); ?></snan>
+		<span class="sr-only"><?php esc_html_e( 'Закрыть меню', WEBENERGYTH_TEXTDOMAIN ); ?></span>
 	</button>
 
 	<?php if ( has_custom_logo() ) : ?>

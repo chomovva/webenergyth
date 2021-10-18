@@ -56,6 +56,8 @@ function dequeue_style() {
 	wp_dequeue_style( 'exactmetrics-popular-posts-style-css' );
 	wp_dequeue_style( 'tablepress-default-css' );
 	wp_dequeue_style( 'site-reviews-css' );
+	wp_dequeue_style( 'dashicons-css' );
+	wp_dequeue_style( 'exactmetrics-vue-frontend-style-css' );
 }
 
 add_action( 'wp_print_styles', 'webenergyth\dequeue_style' );
@@ -82,6 +84,8 @@ function print_styles() {
 	wp_enqueue_style( 'wpdiscuz-user-content-css' );
 	wp_enqueue_style( 'exactmetrics-popular-posts-style-css' );
 	wp_enqueue_style( 'tablepress-default-css' );
+	wp_enqueue_style( 'dashicons-css' );
+	wp_enqueue_style( 'exactmetrics-vue-frontend-style-css' );
 }
 add_action( 'get_footer', 'webenergyth\print_styles', 10, 0 );
 
@@ -98,3 +102,18 @@ function ctitical_styles() {
 }
 
 add_action( 'wp_head', 'webenergyth\ctitical_styles', 10, 0 );
+
+
+/**
+ * Удаляет аттрибуты для style и script, которые были добавленны в обход wp
+ * */
+function remove_type_attr_start() {
+	ob_start();
+}
+
+function remove_type_attr_end() {
+    echo preg_replace( "/type=['\"]text\/(javascript|css)['\"]/", '', ob_get_clean() );
+}
+
+add_action( 'get_header', 'webenergyth\remove_type_attr_start', 5, 0 );
+add_action( 'wp_footer', 'webenergyth\remove_type_attr_end', 99, 0 );

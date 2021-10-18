@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) { exit; };
 		
 		<?php if ( $entry[ 'value' ] <= 100 ) : ?>
 			<div class="progress">
-				<div class="progress-bar" role="progressbar" style="width: <?php echo esc_attr( $entry[ 'value' ] ); ?>%" aria-valuenow="<?php echo esc_attr( $entry[ 'value' ] ); ?>%" aria-valuemin="0" aria-valuemax="100"></div>
+				<div class="progress-bar" role="progressbar" style="width: <?php echo esc_attr( $entry[ 'value' ] ); ?>%"></div>
 			</div>
 		<?php endif; ?>
 
